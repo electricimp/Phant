@@ -54,7 +54,12 @@ class Phant {
 
         try {
             if (resp.statuscode >= 200 && resp.statuscode < 300) {
-                data = http.jsondecode(resp.body);
+                // ignore bad json
+                try {
+                    data = http.jsondecode(resp.body);
+                } catch(ex) {
+                    data = resp.body;
+                }
             } else {
                 err = { code = resp.statuscode, error = resp.body };
             }
