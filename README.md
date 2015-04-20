@@ -11,6 +11,9 @@ When the optional callback is passed, the requests will be made asynchronously. 
 The Phant constructor takes three parameters - the instances public key, private key, and an optional base url. If no url is specified, the class will use Sparkfun's [https://data.sparkfun.com](https://data.sparkfun.com) as the base:
 
 ```squirrel
+// Agent Code
+#require "phant.class.nut:1.0"
+
 stream <- Phant("<-- PUBLIC_KEY -->", "<-- PRIVATE_KEY -->");
 ```
 
