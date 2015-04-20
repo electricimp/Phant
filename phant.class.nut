@@ -1,4 +1,6 @@
 class Phant {
+    static version = [1,0,0];
+
     _baseUrl = null;
 
     _publicKey = null;
