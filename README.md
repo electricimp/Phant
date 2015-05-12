@@ -2,6 +2,8 @@ Phant IO
 =========
 The Phant class wraps the PhantIO / [data.sparkfun.com](https://data.sparkfun.com) API. It is a very simple data store to get up and running with.
 
+**To add this library to your project, add** `#require "Phant.class.nut:1.1.0"` **to the top of your agent code**
+
 ### Callbacks
 All methods in the Phant class take an optional callback parameter. The callback expects two parameters: error, and data. If the request was successful, err will be ```null```, and data will contain the response. If the request was unsucessful, err will contain the error information.
 
